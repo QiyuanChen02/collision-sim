@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Have fun watching balls bounce about the screen (desktop only)">
+    <title>Collision detection</title>
+    <link rel="stylesheet" href="myStyles.css">
+</head>
+<body>
+    
+    <button id="openSettings" style="display: block">Settings</button>
+
+    <div id="settingsTab" style="display: none">
+        <button id="settings">Settings</button>
+        <div>
+            <label for="velocity">Initial particle velocity:</label>
+            <input type="text" id="velocity" name="velocity" value="20">
+        </div>
+        <hr>
+        <div>
+            <label for="minRadius">Minimum particle radius: </label>
+            <input type="text" id="minRadius" name="minRadius" value="10">
+        </div>
+        <hr>
+        <div>
+            <label for="maxRadius">Maximum particle radius: </label>
+            <input type="text" id="maxRadius" name="maxRadius" value="30">
+        </div>
+        <hr>
+        <div>
+            <label for="noParticles">Number of particles: </label>
+            <input type="text" id="noParticles" name="noParticles" value="20">
+        </div>
+        <button id = "simulate">Simulate!</button>
+    </div>
+
+    <button id="openAbout" style="display: block">About</button>
+
+    <div id="aboutTab" style="display: none">
+        <h1>About</h1>
+        <p>This is a physics particle simulator made by Qiyuan Chen. This was designed as a way to simulate Brownian motion, where particles move about randomly in a fluid due to collisions with each other.</p>
+        <br>
+        <p>Using the settings, you can change a wide range of variables, ranging from the number, type and speed of the particles. However please make sure you <strong>do not include too many particles or very large particles</strong>, because that could potentially cause the program to lag out.</p>
+        <br>
+        <p>Apart from that, enjoy messing around with this simple simulation. If you want to see my other projects or know more about me, make sure to check out <a href="http://qchen.netlify.app/">http://qchen.netlify.app/</a></p>
+
+        <button id="about" style="display: block">About</button>
+    </div>
+
+    <canvas></canvas>
+    <script src="myScript.js"></script>
+
+</body>
+</html>

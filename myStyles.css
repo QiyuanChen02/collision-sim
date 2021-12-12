@@ -1,0 +1,93 @@
+/* Style for the whole page */
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: monospace;
+}
+
+canvas {
+    display: block;
+}
+
+/* General button format */
+button {
+    background-color:rgb(214, 193, 214);
+    border: solid 2px black;
+    font-size: 20px;
+    display: block;
+    width: 250px; 
+    height: 30px;
+    outline: none;
+}
+
+button:hover {
+    background-color:rgb(197, 182, 211);
+}
+
+/* The two buttons which show up on the page */
+
+#openSettings {
+    position: absolute;
+    margin: 10px;
+    opacity: 0.8;
+}
+
+#openAbout {
+    position: absolute;
+    margin: 10px;
+    opacity: 0.8;
+    bottom: 0px;
+}
+
+
+/* Style for the settings tab */ 
+#settingsTab {
+    position: absolute;
+    width: 250px;
+    background-color: rgb(113, 214, 214);
+    left: 0px;
+    padding: 10px 10px 10px 10px;
+    display: block;
+    opacity: 0.8;
+}
+
+#settingsTab button {
+    margin: auto;
+}
+
+#settingsTab div{
+    margin: auto;
+    padding: 10px 0px 10px 0px;
+    line-height: 25px;
+}
+
+input {
+    width: 30px;
+    text-align: center;
+}
+
+/* Style for the about tab */
+#aboutTab {
+    position: absolute;
+    width: 250px;
+    height: 100%;
+    background-color: rgb(113, 214, 214);
+    padding: 0px 10px 0px 10px;
+    display: block;
+}
+
+#about {
+    position: absolute;
+    bottom: 10px;
+}
+
+h1 {
+    font-size: 32px;
+}
+
+p {
+    font-size: 15px;
+}
